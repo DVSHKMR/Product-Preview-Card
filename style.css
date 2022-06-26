@@ -198,7 +198,7 @@ button:hover {
     .container {
         height: 510px;
         width: 280px;
-        margin: 20px;
+        margin: 22px;
         display: flex;
         flex-direction: column;
 
