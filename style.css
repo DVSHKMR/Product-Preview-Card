@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    border: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: auto;
+    height: auto;
+    background-color: var(--Cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    line-height: 1;
+    font-size: 23px;
+    padding-bottom: 18px;
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+    line-height: 1;
+    font-size: 23px;
+    color: var(--Dark-cyan);
+}
+
+h3 {
+    font-size: 10px;
+    font-weight: 100;
+    color: var(--Dark-grayish-blue);
+    padding: 5px 0 9px 0;
+
+
+}
+
+.texts p {
+    font-size: 10px;
+    line-height: 1.7;
+    color: var(--Dark-grayish-blue);
+    /* font-weight: 700; */
+
+
+ }
+
+/* ================Container================== */
+
+.container {
+    width: 435px;
+    height: 325px;
+    background-color: var(--White);
+    margin-top: 120px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+
+}
+
+
+/* =====================Image=================== */
+
+.container .img img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+
+
+.container .second-img {
+    display: none;
+}
+
+/* ===============Texts=============== */
+
+.texts {
+    /* border: 1px solid black; */
+    margin-bottom: 0px;
+}
+
+/* ===========texts-price=============== */
+
+.texts-price {
+    position: relative;
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    /* border: 1px solid lime; */
+    padding: 1.2rem;
+}
+
+/* ===============price============== */
+.price {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* border: 1px solid black;  */
+    margin: 0 0 23px 0;
+}
+
+.price p {
+    font-size: 0.59375rem;
+    color: var(--Dark-grayish-blue);
+}
+
+/* ===========button========== */
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    background-color: var(--Dark-cyan);
+    color: #fff;
+    width: 100%;
+    padding: 9px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button img {
+    width: 12px;
+}
+
+.price-button {
+    position: absolute;
+    top: 68.5%;
+    width: 80%;
+}
+
+button:hover {
+    background-color: rgb(1, 44, 1);
+}
+
+@media screen and (max-width: 768px) {
+    
+    h1 {
+        font-size: 26px;
+        padding-bottom: 18px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    h3 {
+        font-size: 0.656rem;
+        font-weight: 100;
+        color: var(--Dark-grayish-blue);
+        padding: 5px 0 9px 0;
+    
+    
+    }
+    
+    .texts p {
+        font-size: 0.656rem;
+        line-height: 1.7;
+        color: var(--Dark-grayish-blue);
+        /* font-weight: 700; */
+    }
+
+    .price p {
+    font-size: 0.7rem;
+
+    }
+
+    .container {
+        height: 510px;
+        width: 280px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .container .img img:nth-of-type(1) {
+        display: none;
+        width: 50%;
+    }
+
+    .container .second-img {
+        display: inline-block;
+        /* border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 0px; */
+        border-top-right-radius: 8px; 
+    }
+
+    .container .img img:nth-of-type(2)  {
+        border-bottom-left-radius: 0;
+    } 
+    
+
+    .texts-price {
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
+    .price-button {
+    width: 86.2%;
+    top: 64.5%;
+    
+
+    }
+/* ===========button========== */
+
+    button img,
+    p {
+        margin: 0.3rem 0;
+    }
+
+
+
+    button {
+    font-size: 0.75rem;
+    margin-bottom: 34px;
+    border-radius: 6px;
+    gap: 9px;
+   }
+    
+
+}
